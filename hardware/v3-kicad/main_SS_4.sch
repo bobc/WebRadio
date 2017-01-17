@@ -1,0 +1,2769 @@
+EESchema Schematic File Version 2
+LIBS:main
+LIBS:power
+LIBS:main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "Power Management"
+Date "16 JAN 2017"
+Rev ""
+Comp "www.watterott.net"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 6270 1740 0    66   ~ 0
+1.5A
+Text Notes 6020 1840 0    66   ~ 0
+PIS4728
+$Comp
+L SUPPLY1_+3V3 #+3V063
+U 1 1 587D3A7F
+P 6500 2850
+F 0 "#+3V063" H 6599 2950 66  0001 R TNN
+F 1 "+3V3" H 6599 2950 66  0000 R TNN
+F 2 "" H 6500 2850 60  0001 C CNN
+F 3 "" H 6500 2850 60  0001 C CNN
+	1    6500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L SUPPLY1_AGND #AGND064
+U 1 1 587D3AE3
+P 4900 4950
+F 0 "#AGND064" H 4760 4831 66  0001 L BNN
+F 1 "AGND" H 4760 4831 66  0000 L BNN
+F 2 "" H 4900 4950 60  0001 C CNN
+F 3 "" H 4900 4950 60  0001 C CNN
+	1    4900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_CPOL-EU C1
+U 1 1 587D3BAB
+P 3800 1950
+F 0 "C1" H 3835 1978 66  0000 L BNN
+F 1 "22uF" H 3844 1769 66  0000 L BNN
+F 2 "main:RCL_153CLV-0810" H 3790 1740 65  0001 L TNN
+F 3 "" H 3800 1950 60  0001 C CNN
+F 4 "~" H 3800 1950 60  0001 C CNN "MPN"
+	1    3800 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C2
+U 1 1 587D3C73
+P 4100 1950
+F 0 "C2" H 4120 1964 66  0000 L BNN
+F 1 "100nF" H 4129 1775 66  0000 L BNN
+F 2 "main:RCL_C0603" H 4090 1740 65  0001 L TNN
+F 3 "" H 4100 1950 60  0001 C CNN
+	1    4100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C3
+U 1 1 587D3D3B
+P 5700 1450
+F 0 "C3" H 5730 1465 66  0000 L BNN
+F 1 "100nF" H 5730 1275 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5690 1240 65  0001 L TNN
+F 3 "" H 5700 1450 60  0001 C CNN
+	1    5700 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RCL_CPOL-EU C4
+U 1 1 587D3E03
+P 6500 1950
+F 0 "C4" H 6525 1969 66  0000 L BNN
+F 1 "100uF" H 6475 1831 66  0000 R TNN
+F 2 "main:RCL_153CLV-0810" H 6490 1740 65  0001 L TNN
+F 3 "" H 6500 1950 60  0001 C CNN
+F 4 "~" H 6500 1950 60  0001 C CNN "MPN"
+	1    6500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C5
+U 1 1 587D3ECB
+P 3800 3050
+F 0 "C5" H 3830 3064 66  0000 L BNN
+F 1 "2uF" H 3829 2865 66  0000 L BNN
+F 2 "main:RCL_C0603" H 3790 2840 65  0001 L TNN
+F 3 "" H 3800 3050 60  0001 C CNN
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C6
+U 1 1 587D3F93
+P 4100 3150
+F 0 "C6" H 4071 3035 66  0000 R TNN
+F 1 "100nF" H 4070 3225 66  0000 R TNN
+F 2 "main:RCL_C0603" H 4090 2940 65  0001 L TNN
+F 3 "" H 4100 3150 60  0001 C CNN
+	1    4100 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L RCL_C-EU C7
+U 1 1 587D405B
+P 5700 3050
+F 0 "C7" H 5730 3064 66  0000 L BNN
+F 1 "100nF" H 5729 2865 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5690 2840 65  0001 L TNN
+F 3 "" H 5700 3050 60  0001 C CNN
+	1    5700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C8
+U 1 1 587D4123
+P 6000 3050
+F 0 "C8" H 6030 3064 66  0000 L BNN
+F 1 "2uF" H 6029 2865 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5990 2840 65  0001 L TNN
+F 3 "" H 6000 3050 60  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C9
+U 1 1 587D41EB
+P 3800 4650
+F 0 "C9" H 3771 4535 66  0000 R TNN
+F 1 "2uF" H 3770 4735 66  0000 R TNN
+F 2 "main:RCL_C0603" H 3790 4440 65  0001 L TNN
+F 3 "" H 3800 4650 60  0001 C CNN
+	1    3800 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L RCL_C-EU C10
+U 1 1 587D42B3
+P 5600 4550
+F 0 "C10" H 5630 4564 66  0000 L BNN
+F 1 "10nF" H 5629 4365 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5590 4340 65  0001 L TNN
+F 3 "" H 5600 4550 60  0001 C CNN
+	1    5600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C11
+U 1 1 587D437B
+P 6000 4550
+F 0 "C11" H 6030 4564 66  0000 L BNN
+F 1 "2uF" H 6029 4365 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5990 4340 65  0001 L TNN
+F 3 "" H 6000 4550 60  0001 C CNN
+	1    6000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C12
+U 1 1 587D4443
+P 3800 6050
+F 0 "C12" H 3771 5945 66  0000 R TNN
+F 1 "2uF" H 3770 6125 66  0000 R TNN
+F 2 "main:RCL_C0603" H 3790 5840 65  0001 L TNN
+F 3 "" H 3800 6050 60  0001 C CNN
+	1    3800 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L RCL_C-EU C13
+U 1 1 587D450B
+P 5600 5950
+F 0 "C13" H 5630 5964 66  0000 L BNN
+F 1 "10nF" H 5629 5765 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5590 5740 65  0001 L TNN
+F 3 "" H 5600 5950 60  0001 C CNN
+	1    5600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU C14
+U 1 1 587D45D3
+P 6000 5950
+F 0 "C14" H 6030 5964 66  0000 L BNN
+F 1 "2uF" H 6029 5765 66  0000 L BNN
+F 2 "main:RCL_C0603" H 5990 5740 65  0001 L TNN
+F 3 "" H 6000 5950 60  0001 C CNN
+	1    6000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE_DIODE- D1
+U 1 1 587D469B
+P 5900 2050
+F 0 "D1" V 5869 1970 66  0000 R TNN
+F 1 "~" H 5890 1940 65  0001 L TNN
+F 2 "main:DIODE_DO214AA" H 5890 1840 65  0001 L TNN
+F 3 "" H 5900 2050 60  0001 C CNN
+F 4 "~" H 5900 2050 60  0001 C CNN "MPN"
+	1    5900 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE_DIODE- D2
+U 1 1 587D4763
+P 9000 2400
+F 0 "D2" H 9195 2481 66  0000 R TNN
+F 1 "~" H 8990 2290 65  0001 L TNN
+F 2 "main:DIODE_DO214AA" H 8990 2190 65  0001 L TNN
+F 3 "" H 9000 2400 60  0001 C CNN
+F 4 "~" H 9000 2400 60  0001 C CNN "MPN"
+	1    9000 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L DIODE_DIODE- D3
+U 1 1 587D482B
+P 9000 2100
+F 0 "D3" H 9195 2082 66  0000 R TNN
+F 1 "~" H 8990 1990 65  0001 L TNN
+F 2 "main:DIODE_DO214AA" H 8990 1890 65  0001 L TNN
+F 3 "" H 9000 2100 60  0001 C CNN
+F 4 "~" H 9000 2100 60  0001 C CNN "MPN"
+	1    9000 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L CON-JACK_JACK-PLUG EXT_PWR37
+U 1 1 587D48F3
+P 8400 2500
+F 0 "EXT_PWR37" H 8000 2301 66  0000 L BNN
+F 1 "~" H 8100 2301 70  0000 L BNN
+F 2 "main:CON-JACK_SPC4077" H 8390 2290 65  0001 L TNN
+F 3 "" H 8400 2500 60  0001 C CNN
+F 4 "~" H 8400 2500 60  0001 C CNN "MPN"
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_R-EU_ FUSE37
+U 1 1 587D4A1F
+P 9600 2250
+F 0 "FUSE37" H 9450 2308 66  0000 L BNN
+F 1 "1A" H 9450 2120 66  0000 L BNN
+F 2 "main:RCL_R1206" H 9590 2040 65  0001 L TNN
+F 3 "" H 9600 2250 60  0001 C CNN
+	1    9600 2250
+	1    0    0    1   
+$EndComp
+$Comp
+L SUPPLY1_GND #GND065
+U 1 1 587D4A83
+P 4900 2350
+F 0 "#GND065" H 4800 2250 66  0001 L BNN
+F 1 "GND" H 4800 2250 66  0000 L BNN
+F 2 "" H 4900 2350 60  0001 C CNN
+F 3 "" H 4900 2350 60  0001 C CNN
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SUPPLY1_GND #GND066
+U 1 1 587D4AE7
+P 4900 3450
+F 0 "#GND066" H 4800 3350 66  0001 L BNN
+F 1 "GND" H 4800 3350 66  0000 L BNN
+F 2 "" H 4900 3450 60  0001 C CNN
+F 3 "" H 4900 3450 60  0001 C CNN
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SUPPLY1_GND #GND067
+U 1 1 587D4B4B
+P 4900 6350
+F 0 "#GND067" H 4800 6250 66  0001 L BNN
+F 1 "GND" H 4800 6250 66  0000 L BNN
+F 2 "" H 4900 6350 60  0001 C CNN
+F 3 "" H 4900 6350 60  0001 C CNN
+	1    4900 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SUPPLY1_GND #GND068
+U 1 1 587D4BAF
+P 7900 4700
+F 0 "#GND068" H 7801 4600 66  0001 L BNN
+F 1 "GND" H 7801 4600 66  0000 L BNN
+F 2 "" H 7900 4700 60  0001 C CNN
+F 3 "" H 7900 4700 60  0001 C CNN
+	1    7900 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SUPPLY1_GND #GND069
+U 1 1 587D4C13
+P 8600 2700
+F 0 "#GND069" H 8500 2600 66  0001 L BNN
+F 1 "GND" H 8500 2600 66  0000 L BNN
+F 2 "" H 8600 2700 60  0001 C CNN
+F 3 "" H 8600 2700 60  0001 C CNN
+	1    8600 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VOLTAGE-REG_INDUCTOR L1
+U 1 1 587D4CDB
+P 6200 1650
+F 0 "L1" V 6280 1690 66  0000 R TNN
+F 1 "100uH" V 6110 1890 66  0000 R TNN
+F 2 "main:VOLTAGE-REG_CDRH" H 6190 1440 65  0001 L TNN
+F 3 "" H 6200 1650 60  0001 C CNN
+F 4 "~" H 6200 1650 60  0001 C CNN "MPN"
+	1    6200 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RCL_L-EU L2
+U 1 1 587D4DA3
+P 3600 4150
+F 0 "L2" V 3649 4210 66  0000 R TNN
+F 1 "10uH" V 3540 4040 66  0000 L BNN
+F 2 "main:RCL_L3230M" H 3590 3940 65  0001 L TNN
+F 3 "" H 3600 4150 60  0001 C CNN
+F 4 "~" H 3600 4150 60  0001 C CNN "MPN"
+	1    3600 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SUPPLY1_+5V #P+070
+U 1 1 587D4E07
+P 7900 4400
+F 0 "#P+070" H 8000 4500 66  0001 R TNN
+F 1 "+5V" H 8000 4500 66  0000 R TNN
+F 2 "" H 7900 4400 60  0001 C CNN
+F 3 "" H 7900 4400 60  0001 C CNN
+	1    7900 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SUPPLY1_+5V #P+071
+U 1 1 587D4E6B
+P 3300 2850
+F 0 "#P+071" H 3400 2950 66  0001 R TNN
+F 1 "+5V" H 3400 2950 66  0000 R TNN
+F 2 "" H 3300 2850 60  0001 C CNN
+F 3 "" H 3300 2850 60  0001 C CNN
+	1    3300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SUPPLY1_+5V #P+072
+U 1 1 587D4ECF
+P 3300 5550
+F 0 "#P+072" H 3400 5650 66  0001 R TNN
+F 1 "+5V" H 3400 5650 66  0000 R TNN
+F 2 "" H 3300 5550 60  0001 C CNN
+F 3 "" H 3300 5550 60  0001 C CNN
+	1    3300 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SUPPLY1_VCC #P+073
+U 1 1 587D4F33
+P 6500 4150
+F 0 "#P+073" H 6599 4250 66  0001 R TNN
+F 1 "+2V8" H 6599 4250 66  0000 R TNN
+F 2 "" H 6500 4150 60  0001 C CNN
+F 3 "" H 6500 4150 60  0001 C CNN
+	1    6500 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L SUPPLY1_+5V #P+074
+U 1 1 587D4F97
+P 3300 4150
+F 0 "#P+074" H 3400 4250 66  0001 R TNN
+F 1 "+5V" H 3400 4250 66  0000 R TNN
+F 2 "" H 3300 4150 60  0001 C CNN
+F 3 "" H 3300 4150 60  0001 C CNN
+	1    3300 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SUPPLY1_+5V #P+075
+U 1 1 587D4FFB
+P 6800 1650
+F 0 "#P+075" H 6899 1750 66  0001 R TNN
+F 1 "+5V" H 6899 1750 66  0000 R TNN
+F 2 "" H 6800 1650 60  0001 C CNN
+F 3 "" H 6800 1650 60  0001 C CNN
+	1    6800 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L VOLTAGE-REG_MAX5035 U1
+U 1 1 587D50C3
+P 4900 1650
+F 0 "U1" H 4400 2075 66  0000 L BNN
+F 1 "MAX5035BUSA" H 4751 2075 66  0000 L BNN
+F 2 "main:VOLTAGE-REG_SO8" H 4890 1440 65  0001 L TNN
+F 3 "" H 4900 1650 60  0001 C CNN
+	1    4900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VOLTAGE-REG_TS1117 U2
+U 1 1 587D518B
+P 4900 2850
+F 0 "U2" H 4600 2975 66  0000 L BNN
+F 1 "TS1117-3V3" H 4776 2975 66  0000 L BNN
+F 2 "main:VOLTAGE-REG_SOT223" H 4890 2640 65  0001 L TNN
+F 3 "" H 4900 2850 60  0001 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VOLTAGE-REG_LP2985 U3
+U 1 1 587D5253
+P 4900 4250
+F 0 "U3" H 4400 4575 66  0000 L BNN
+F 1 "LP2985-2V8" H 4900 4575 66  0000 L BNN
+F 2 "main:VOLTAGE-REG_SOT23-5" H 4890 4040 65  0001 L TNN
+F 3 "" H 4900 4250 60  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VOLTAGE-REG_LP2985 U4
+U 1 1 587D531B
+P 4900 5650
+F 0 "U4" H 4400 5975 66  0000 L BNN
+F 1 "LP2985-1V8" H 4876 5975 66  0000 L BNN
+F 2 "main:VOLTAGE-REG_SOT23-5" H 4890 5440 65  0001 L TNN
+F 3 "" H 4900 5650 60  0001 C CNN
+	1    4900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CON-USB_USB USB37
+U 1 1 587D53E3
+P 10000 4700
+F 0 "USB37" H 9990 4690 65  0001 L TNN
+F 1 "USB-A-S" H 9990 4590 65  0001 L TNN
+F 2 "main:CON-USB_USB-A-S" H 9990 4490 65  0001 L TNN
+F 3 "" H 10000 4700 60  0001 C CNN
+F 4 "~" H 10000 4700 60  0001 C CNN "MPN"
+	1    10000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU USB_C1
+U 1 1 587D54AB
+P 9200 4000
+F 0 "USB_C1" V 9175 4010 66  0000 L BNN
+F 1 "1uF" V 9295 4010 66  0000 L BNN
+F 2 "main:RCL_C0603" H 9190 3790 65  0001 L TNN
+F 3 "" H 9200 4000 60  0001 C CNN
+	1    9200 4000
+	0    1    -1   0   
+$EndComp
+$Comp
+L RCL_C-EU USB_C2
+U 1 1 587D5573
+P 9600 4500
+F 0 "USB_C2" H 9320 4200 66  0000 L BNN
+F 1 "10nF" H 9609 4330 66  0000 L BNN
+F 2 "main:RCL_C0603" H 9590 4290 65  0001 L TNN
+F 3 "" H 9600 4500 60  0001 C CNN
+	1    9600 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU USB_C3
+U 1 1 587D563B
+P 9350 4500
+F 0 "USB_C3" H 9260 4200 66  0000 L BNN
+F 1 "100nF" H 9359 4330 66  0000 L BNN
+F 2 "main:RCL_C0603" H 9340 4290 65  0001 L TNN
+F 3 "" H 9350 4500 60  0001 C CNN
+	1    9350 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RCL_C-EU USB_C4
+U 1 1 587D5703
+P 8750 4600
+F 0 "USB_C4" H 8750 4700 66  0000 R TNN
+F 1 "2uF" H 8741 4485 66  0000 R TNN
+F 2 "main:RCL_C0805" H 8740 4390 65  0001 L TNN
+F 3 "" H 8750 4600 60  0001 C CNN
+	1    8750 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L RCL_L-EU USB_L1
+U 1 1 587D57CB
+P 8300 4400
+F 0 "USB_L1" V 8241 4250 66  0000 L BNN
+F 1 "10uH" V 8430 4250 66  0000 L BNN
+F 2 "main:RCL_L3230M" H 8290 4190 65  0001 L TNN
+F 3 "" H 8300 4400 60  0001 C CNN
+F 4 "~" H 8300 4400 60  0001 C CNN "MPN"
+	1    8300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L IRF-SOT23_IRLML6402 USB_Q1
+U 1 1 587D5893
+P 9050 4400
+F 0 "USB_Q1" V 9010 4520 66  0000 L BNN
+F 1 "P-CHN" V 8880 4320 66  0000 L BNN
+F 2 "main:IRF-SOT23_MICRO3" H 9040 4190 65  0001 L TNN
+F 3 "" H 9050 4400 60  0001 C CNN
+	1    9050 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L RCL_R-EU_ USB_R1
+U 1 1 587D595B
+P 8750 4200
+F 0 "USB_R1" H 8570 4259 66  0000 L BNN
+F 1 "47k" H 8600 4070 66  0000 L BNN
+F 2 "main:RCL_R0603" H 8740 3990 65  0001 L TNN
+F 3 "" H 8750 4200 60  0001 C CNN
+	1    8750 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RCL_R-EU_ USB_R2
+U 1 1 587D5A23
+P 8300 4000
+F 0 "USB_R2" H 8480 3942 66  0000 R TNN
+F 1 "24k" H 8210 4059 66  0000 L BNN
+F 2 "main:RCL_R0603" H 8290 3790 65  0001 L TNN
+F 3 "" H 8300 4000 60  0001 C CNN
+	1    8300 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L SUPPLY1_VCCINT #VCC076
+U 1 1 587D5A87
+P 6500 5550
+F 0 "#VCC076" H 6599 5650 66  0001 R TNN
+F 1 "+1V8" H 6599 5650 66  0000 R TNN
+F 2 "" H 6500 5550 60  0001 C CNN
+F 3 "" H 6500 5550 60  0001 C CNN
+	1    6500 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 5550 6400 5550
+Wire Wire Line
+	6000 5850 6000 5550
+Connection ~ 6000 5550
+Wire Wire Line
+	5600 4150 6400 4150
+Wire Wire Line
+	6000 4450 6000 4150
+Connection ~ 6000 4150
+Wire Wire Line
+	5300 2850 6400 2850
+Wire Wire Line
+	5700 2950 5700 2850
+Wire Wire Line
+	6000 2950 6000 2850
+Connection ~ 5700 2850
+Connection ~ 6000 2850
+Text Label 2250 6700 0    65   ~ 0
++3V3
+Text Label 2250 6800 0    65   ~ 0
++3V3
+Wire Wire Line
+	4200 5550 4200 5850
+Wire Wire Line
+	3400 5550 4200 5550
+Wire Wire Line
+	3800 5550 3800 5850
+Connection ~ 4200 5550
+Connection ~ 3800 5550
+Wire Wire Line
+	8100 4400 8000 4400
+Wire Wire Line
+	6700 1650 6500 1650
+Wire Wire Line
+	6500 1650 6500 1850
+Wire Wire Line
+	6500 1850 5600 1850
+Connection ~ 6500 1650
+Connection ~ 6500 1850
+Wire Wire Line
+	3800 2950 3800 2850
+Wire Wire Line
+	3400 2850 4500 2850
+Wire Wire Line
+	4100 2850 4100 2950
+Connection ~ 4100 2850
+Connection ~ 3800 2850
+Wire Wire Line
+	4200 4450 4200 4150
+Wire Wire Line
+	4200 4150 3800 4150
+Wire Wire Line
+	3800 4150 3800 4450
+Connection ~ 4200 4150
+Connection ~ 3800 4150
+Wire Wire Line
+	3800 4850 6000 4850
+Wire Wire Line
+	5600 4850 5600 4750
+Wire Wire Line
+	3800 4850 3800 4750
+Wire Wire Line
+	6000 4850 6000 4750
+Connection ~ 4900 4850
+Connection ~ 5600 4850
+Wire Wire Line
+	3800 3350 6000 3350
+Wire Wire Line
+	4100 3350 4100 3250
+Wire Wire Line
+	5700 3350 5700 3250
+Wire Wire Line
+	6000 3350 6000 3250
+Wire Wire Line
+	4900 3150 4900 3350
+Wire Wire Line
+	3800 3350 3800 3250
+Connection ~ 4900 3350
+Connection ~ 5700 3350
+Connection ~ 4100 3350
+Wire Wire Line
+	3800 6250 6000 6250
+Wire Wire Line
+	5600 6250 5600 6150
+Wire Wire Line
+	3800 6250 3800 6150
+Wire Wire Line
+	6000 6250 6000 6150
+Connection ~ 4900 6250
+Connection ~ 5600 6250
+Wire Wire Line
+	8000 4700 9900 4700
+Wire Wire Line
+	9300 4000 9800 4000
+Wire Wire Line
+	9800 4000 9800 4700
+Connection ~ 9600 4700
+Connection ~ 8750 4700
+Connection ~ 9800 4700
+Connection ~ 9350 4700
+Wire Wire Line
+	8600 2500 8600 2600
+Connection ~ 8600 2600
+Wire Wire Line
+	3800 2250 3800 2150
+Wire Wire Line
+	3800 2250 6500 2250
+Wire Wire Line
+	4100 2150 4100 2250
+Wire Wire Line
+	5900 2250 5900 2150
+Wire Wire Line
+	6500 2250 6500 2150
+Connection ~ 4100 2250
+Connection ~ 4800 2250
+Connection ~ 4900 2250
+Connection ~ 5000 2250
+Connection ~ 5900 2250
+Text Label 1200 900  0    65   ~ 0
+GND
+Text Label 1200 1000 0    65   ~ 0
+GND
+Text Label 1200 1100 0    65   ~ 0
+GND
+Text Label 1200 1200 0    65   ~ 0
+GND
+Text Label 1200 1300 0    65   ~ 0
+GND
+Text Label 1200 1400 0    65   ~ 0
+GND
+Text Label 1200 1500 0    65   ~ 0
+GND
+Text Label 1200 1600 0    65   ~ 0
+GND
+Text Label 1200 1700 0    65   ~ 0
+GND
+Text Label 1200 1800 0    65   ~ 0
+GND
+Text Label 1200 1900 0    65   ~ 0
+GND
+Text Label 1200 2000 0    65   ~ 0
+GND
+Text Label 1200 2100 0    65   ~ 0
+GND
+Text Label 1200 2200 0    65   ~ 0
+GND
+Text Label 1200 2300 0    65   ~ 0
+GND
+Text Label 1200 2400 0    65   ~ 0
+GND
+Text Label 1200 2500 0    65   ~ 0
+GND
+Text Label 1200 2600 0    65   ~ 0
+GND
+Text Label 1200 2700 0    65   ~ 0
+GND
+Text Label 1200 2800 0    65   ~ 0
+GND
+Text Label 1200 2900 0    65   ~ 0
+GND
+Text Label 1200 3000 0    65   ~ 0
+GND
+Text Label 1200 3100 0    65   ~ 0
+GND
+Wire Wire Line
+	8500 4400 8850 4400
+Connection ~ 8750 4400
+Wire Wire Line
+	9900 4600 9700 4600
+Wire Wire Line
+	9700 4600 9700 4400
+Wire Wire Line
+	9700 4400 9250 4400
+Connection ~ 9600 4400
+Connection ~ 9350 4400
+Wire Wire Line
+	8500 4000 9000 4000
+Wire Wire Line
+	8950 4000 8950 4200
+Connection ~ 8750 4000
+Connection ~ 8950 4000
+Wire Wire Line
+	8600 2400 8900 2400
+Wire Wire Line
+	9100 2100 9300 2100
+Wire Wire Line
+	9300 2100 9300 2400
+Wire Wire Line
+	9300 2400 9100 2400
+Wire Wire Line
+	9400 2250 9300 2250
+Connection ~ 9300 2250
+Wire Wire Line
+	5900 1450 5900 1950
+Wire Wire Line
+	5600 1650 5900 1650
+Connection ~ 5900 1650
+Wire Wire Line
+	8900 2100 8600 2100
+Text Label 8600 2100 2    62   ~ 0
+POE+
+Wire Wire Line
+	3300 1450 4200 1450
+Wire Wire Line
+	3800 1850 3800 1450
+Wire Wire Line
+	4200 1450 4200 1650
+Connection ~ 3800 1450
+Connection ~ 4200 1450
+Text Label 3300 1450 2    62   ~ 0
+PWR+
+Wire Wire Line
+	9900 2250 9800 2250
+Text Label 9900 2250 0    62   ~ 0
+PWR+
+Wire Wire Line
+	8100 4000 7900 4000
+Text Label 7900 4000 2    62   ~ 0
+USB_PWR
+Wire Wire Line
+	4200 1850 4100 1850
+Text GLabel 5600 5550 2    10   UnSpc ~ 0
++1V8
+Text GLabel 6400 5550 0    10   UnSpc ~ 0
++1V8
+Text GLabel 6000 5850 1    10   UnSpc ~ 0
++1V8
+Text GLabel 5600 4150 2    10   UnSpc ~ 0
++2V8
+Text GLabel 6400 4150 0    10   UnSpc ~ 0
++2V8
+Text GLabel 6000 4450 1    10   UnSpc ~ 0
++2V8
+Text GLabel 6400 2850 0    10   UnSpc ~ 0
++3V3
+Text GLabel 5700 2950 1    10   UnSpc ~ 0
++3V3
+Text GLabel 6000 2950 1    10   UnSpc ~ 0
++3V3
+Text GLabel 5300 2850 2    10   UnSpc ~ 0
++3V3
+Text GLabel 3800 5850 1    10   UnSpc ~ 0
++5V
+Text GLabel 4200 5850 0    10   UnSpc ~ 0
++5V
+Text GLabel 4200 5550 0    10   UnSpc ~ 0
++5V
+Text GLabel 3400 5550 2    10   UnSpc ~ 0
++5V
+Text GLabel 3400 4150 2    10   UnSpc ~ 0
++5V
+Text GLabel 3400 4150 0    10   UnSpc ~ 0
++5V
+Text GLabel 8100 4400 0    10   UnSpc ~ 0
++5V
+Text GLabel 8000 4400 2    10   UnSpc ~ 0
++5V
+Text GLabel 6700 1650 0    10   UnSpc ~ 0
++5V
+Text GLabel 6500 1650 2    10   UnSpc ~ 0
++5V
+Text GLabel 5600 1850 2    10   UnSpc ~ 0
++5V
+Text GLabel 6500 1850 1    10   UnSpc ~ 0
++5V
+Text GLabel 3800 2950 1    10   UnSpc ~ 0
++5V
+Text GLabel 4100 2950 1    10   UnSpc ~ 0
++5V
+Text GLabel 4500 2850 0    10   UnSpc ~ 0
++5V
+Text GLabel 3400 2850 2    10   UnSpc ~ 0
++5V
+Text Label 4200 4450 2    10   ~ 0
+5V_VIN
+Text Label 4200 4150 2    10   ~ 0
+5V_VIN
+Text Label 3800 4450 1    10   ~ 0
+5V_VIN
+Text Label 3800 4150 0    10   ~ 0
+5V_VIN
+Text GLabel 4900 4850 3    10   UnSpc ~ 0
+AGND
+Text GLabel 4900 4850 1    10   UnSpc ~ 0
+AGND
+Text GLabel 5600 4750 3    10   UnSpc ~ 0
+AGND
+Text GLabel 3800 4750 3    10   UnSpc ~ 0
+AGND
+Text GLabel 6000 4750 3    10   UnSpc ~ 0
+AGND
+Text Label 5600 1450 0    10   ~ 0
+BST
+Text Label 5600 1450 2    10   ~ 0
+BST
+Text GLabel 4900 3350 1    10   UnSpc ~ 0
+GND
+Text GLabel 4100 3250 3    10   UnSpc ~ 0
+GND
+Text GLabel 5700 3250 3    10   UnSpc ~ 0
+GND
+Text GLabel 6000 3250 3    10   UnSpc ~ 0
+GND
+Text GLabel 4900 3150 3    10   UnSpc ~ 0
+GND
+Text GLabel 3800 3250 3    10   UnSpc ~ 0
+GND
+Text GLabel 4900 6250 3    10   UnSpc ~ 0
+GND
+Text GLabel 4900 6250 1    10   UnSpc ~ 0
+GND
+Text GLabel 5600 6150 3    10   UnSpc ~ 0
+GND
+Text GLabel 3800 6150 3    10   UnSpc ~ 0
+GND
+Text GLabel 6000 6150 3    10   UnSpc ~ 0
+GND
+Text GLabel 9900 4700 0    10   UnSpc ~ 0
+GND
+Text GLabel 9600 4700 3    10   UnSpc ~ 0
+GND
+Text GLabel 8750 4700 3    10   UnSpc ~ 0
+GND
+Text GLabel 8000 4700 2    10   UnSpc ~ 0
+GND
+Text GLabel 9300 4000 2    10   UnSpc ~ 0
+GND
+Text GLabel 9350 4700 3    10   UnSpc ~ 0
+GND
+Text GLabel 8600 2600 2    10   UnSpc ~ 0
+GND
+Text GLabel 8600 2600 1    10   UnSpc ~ 0
+GND
+Text GLabel 8600 2500 2    10   UnSpc ~ 0
+GND
+Text GLabel 6500 2150 3    10   UnSpc ~ 0
+GND
+Text GLabel 3800 2150 3    10   UnSpc ~ 0
+GND
+Text GLabel 4100 2150 3    10   UnSpc ~ 0
+GND
+Text GLabel 4800 2250 3    10   UnSpc ~ 0
+GND
+Text GLabel 4900 2250 1    10   UnSpc ~ 0
+GND
+Text GLabel 5000 2250 3    10   UnSpc ~ 0
+GND
+Text GLabel 5900 2150 3    10   UnSpc ~ 0
+GND
+Text GLabel 8500 4400 2    10   UnSpc ~ 0
+N$2
+Text GLabel 8750 4400 1    10   UnSpc ~ 0
+N$2
+Text GLabel 8750 4400 3    10   UnSpc ~ 0
+N$2
+Text GLabel 8850 4400 0    10   UnSpc ~ 0
+N$2
+Text Label 9900 4600 2    10   ~ 0
+N$12
+Text Label 9600 4400 1    10   ~ 0
+N$12
+Text Label 9250 4400 0    10   ~ 0
+N$12
+Text Label 9350 4400 1    10   ~ 0
+N$12
+Text Label 8500 4000 0    10   ~ 0
+N$16
+Text Label 8750 4000 1    10   ~ 0
+N$16
+Text Label 8950 4200 1    10   ~ 0
+N$16
+Text Label 9000 4000 2    10   ~ 0
+N$16
+Text Label 8600 2400 0    10   ~ 0
+N$23
+Text Label 8900 2400 2    10   ~ 0
+N$23
+Text Label 9100 2100 0    10   ~ 0
+N$24
+Text Label 9100 2400 0    10   ~ 0
+N$24
+Text Label 9400 2250 2    10   ~ 0
+N$24
+Text Label 5600 4450 0    10   ~ 0
+N$27
+Text Label 5600 4450 1    10   ~ 0
+N$27
+Text Label 5600 5850 0    10   ~ 0
+N$28
+Text Label 5600 5850 1    10   ~ 0
+N$28
+Text GLabel 5900 1950 1    10   UnSpc ~ 0
+OUT
+Text GLabel 5900 1450 2    10   UnSpc ~ 0
+OUT
+Text GLabel 5900 1650 0    10   UnSpc ~ 0
+OUT
+Text GLabel 5600 1650 2    10   UnSpc ~ 0
+OUT
+Text GLabel 8900 2100 0    10   UnSpc ~ 0
+POE+
+Text GLabel 3800 1850 1    10   UnSpc ~ 0
+PWR+
+Text GLabel 4200 1650 0    10   UnSpc ~ 0
+PWR+
+Text GLabel 4200 1450 0    10   UnSpc ~ 0
+PWR+
+Text GLabel 9800 2250 2    10   UnSpc ~ 0
+PWR+
+Text GLabel 8100 4000 0    10   UnSpc ~ 0
+USB_PWR
+Text Label 4200 1850 2    10   ~ 0
+VD
+Text Label 4100 1850 1    10   ~ 0
+VD
+NoConn ~ 9900 4400
+NoConn ~ 9900 4500
+$Comp
+L SUPPLY1_+5V #P+077
+U 1 1 587DB9D4
+P 8000 950
+F 0 "#P+077" H 8099 1050 66  0001 R TNN
+F 1 "+5V" H 8099 1050 66  0000 R TNN
+F 2 "" H 8000 950 60  0001 C CNN
+F 3 "" H 8000 950 60  0001 C CNN
+	1    8000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG078
+U 1 1 587DC0C2
+P 8000 1050
+F 0 "#FLG078" H 8000 1145 50  0001 C CNN
+F 1 "PWR_FLAG" H 8000 1230 50  0000 C CNN
+F 2 "" H 8000 1050 50  0000 C CNN
+F 3 "" H 8000 1050 50  0000 C CNN
+	1    8000 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG079
+U 1 1 587DDA15
+P 8550 1050
+F 0 "#FLG079" H 8550 1145 50  0001 C CNN
+F 1 "PWR_FLAG" H 8550 1230 50  0000 C CNN
+F 2 "" H 8550 1050 50  0000 C CNN
+F 3 "" H 8550 1050 50  0000 C CNN
+	1    8550 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L SUPPLY1_+3V3 #+3V080
+U 1 1 587DDD9C
+P 8550 950
+F 0 "#+3V080" H 8649 1050 66  0001 R TNN
+F 1 "+3V3" H 8649 1050 66  0000 R TNN
+F 2 "" H 8550 950 60  0001 C CNN
+F 3 "" H 8550 950 60  0001 C CNN
+	1    8550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SUPPLY1_VCC #P+081
+U 1 1 587DDE0A
+P 9000 950
+F 0 "#P+081" H 9099 1050 66  0001 R TNN
+F 1 "+2V8" H 9099 1050 66  0000 R TNN
+F 2 "" H 9000 950 60  0001 C CNN
+F 3 "" H 9000 950 60  0001 C CNN
+	1    9000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SUPPLY1_VCCINT #VCC082
+U 1 1 587DDFC2
+P 9450 950
+F 0 "#VCC082" H 9549 1050 66  0001 R TNN
+F 1 "+1V8" H 9549 1050 66  0000 R TNN
+F 2 "" H 9450 950 60  0001 C CNN
+F 3 "" H 9450 950 60  0001 C CNN
+	1    9450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG083
+U 1 1 587DE457
+P 9000 1050
+F 0 "#FLG083" H 9000 1145 50  0001 C CNN
+F 1 "PWR_FLAG" H 9000 1230 50  0000 C CNN
+F 2 "" H 9000 1050 50  0000 C CNN
+F 3 "" H 9000 1050 50  0000 C CNN
+	1    9000 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG084
+U 1 1 587DE4C5
+P 9450 1050
+F 0 "#FLG084" H 9450 1145 50  0001 C CNN
+F 1 "PWR_FLAG" H 9450 1230 50  0000 C CNN
+F 2 "" H 9450 1050 50  0000 C CNN
+F 3 "" H 9450 1050 50  0000 C CNN
+	1    9450 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG085
+U 1 1 587DE967
+P 3550 1200
+F 0 "#FLG085" H 3550 1295 50  0001 C CNN
+F 1 "PWR_FLAG" H 3550 1380 50  0000 C CNN
+F 2 "" H 3550 1200 50  0000 C CNN
+F 3 "" H 3550 1200 50  0000 C CNN
+	1    3550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1200 3550 1450
+Connection ~ 3550 1450
+$Comp
+L SUPPLY1_AGND #AGND086
+U 1 1 587DF3C2
+P 10200 1200
+F 0 "#AGND086" H 10060 1081 66  0001 L BNN
+F 1 "AGND" H 10060 1081 66  0000 L BNN
+F 2 "" H 10200 1200 60  0001 C CNN
+F 3 "" H 10200 1200 60  0001 C CNN
+	1    10200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG087
+U 1 1 587DF979
+P 10200 1100
+F 0 "#FLG087" H 10200 1195 50  0001 C CNN
+F 1 "PWR_FLAG" H 10200 1280 50  0000 C CNN
+F 2 "" H 10200 1100 50  0000 C CNN
+F 3 "" H 10200 1100 50  0000 C CNN
+	1    10200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L via V1
+U 1 1 587D2797
+P 1200 700
+F 0 "V1" H 1500 700 60  0000 C CNN
+F 1 "via" H 1650 700 60  0000 C CNN
+F 2 "main:via" H 1200 700 60  0001 C CNN
+F 3 "" H 1200 700 60  0000 C CNN
+	1    1200 700 
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V2
+U 1 1 587D2B18
+P 1200 800
+F 0 "V2" H 1500 800 60  0000 C CNN
+F 1 "via" H 1650 800 60  0000 C CNN
+F 2 "main:via" H 1200 800 60  0001 C CNN
+F 3 "" H 1200 800 60  0000 C CNN
+	1    1200 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V3
+U 1 1 587D2B87
+P 1200 900
+F 0 "V3" H 1500 900 60  0000 C CNN
+F 1 "via" H 1650 900 60  0000 C CNN
+F 2 "main:via" H 1200 900 60  0001 C CNN
+F 3 "" H 1200 900 60  0000 C CNN
+	1    1200 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V4
+U 1 1 587D2BEC
+P 1200 1000
+F 0 "V4" H 1500 1000 60  0000 C CNN
+F 1 "via" H 1650 1000 60  0000 C CNN
+F 2 "main:via" H 1200 1000 60  0001 C CNN
+F 3 "" H 1200 1000 60  0000 C CNN
+	1    1200 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V5
+U 1 1 587D2C4B
+P 1200 1100
+F 0 "V5" H 1500 1100 60  0000 C CNN
+F 1 "via" H 1650 1100 60  0000 C CNN
+F 2 "main:via" H 1200 1100 60  0001 C CNN
+F 3 "" H 1200 1100 60  0000 C CNN
+	1    1200 1100
+	-1   0    0    1   
+$EndComp
+Text Label 1200 3200 0    65   ~ 0
+GND
+Text Label 1200 3300 0    65   ~ 0
+GND
+Text Label 1200 3400 0    65   ~ 0
+GND
+Text Label 1200 3500 0    65   ~ 0
+GND
+Text Label 1200 3600 0    65   ~ 0
+GND
+Text Label 1200 3700 0    65   ~ 0
+GND
+Text Label 1200 3800 0    65   ~ 0
+GND
+Text Label 1200 3900 0    65   ~ 0
+GND
+Text Label 1200 4000 0    65   ~ 0
+GND
+Text Label 1200 4100 0    65   ~ 0
+GND
+Text Label 1200 4200 0    65   ~ 0
+GND
+Text Label 1200 4300 0    65   ~ 0
+GND
+Text Label 1200 4400 0    65   ~ 0
+GND
+Text Label 1200 4500 0    65   ~ 0
+GND
+Text Label 1200 4600 0    65   ~ 0
+GND
+Text Label 1200 4700 0    65   ~ 0
+GND
+Text Label 1200 4800 0    65   ~ 0
+GND
+Text Label 1200 4900 0    65   ~ 0
+GND
+Text Label 1200 5000 0    65   ~ 0
+GND
+Text Label 1200 5100 0    65   ~ 0
+GND
+Text Label 1200 5200 0    65   ~ 0
+GND
+Text Label 1200 5300 0    65   ~ 0
+GND
+Text Label 1200 5400 0    65   ~ 0
+GND
+Text Label 1200 5500 0    65   ~ 0
+GND
+Text Label 1200 5600 0    65   ~ 0
+GND
+Text Label 1200 5700 0    65   ~ 0
+GND
+Text Label 1200 5800 0    65   ~ 0
+GND
+Text Label 1200 5900 0    65   ~ 0
+GND
+Text Label 1200 6000 0    65   ~ 0
+GND
+Text Label 1200 6100 0    65   ~ 0
+GND
+Text Label 1200 6200 0    65   ~ 0
+GND
+Text Label 1200 6300 0    65   ~ 0
+GND
+Text Label 1200 6400 0    65   ~ 0
+GND
+Text Label 1200 6500 0    65   ~ 0
+GND
+Text Label 1200 6600 0    65   ~ 0
+GND
+Text Label 1200 6700 0    65   ~ 0
+GND
+Text Label 1200 6800 0    65   ~ 0
+GND
+Text Label 1200 6900 0    65   ~ 0
+GND
+Text Label 1200 7000 0    65   ~ 0
+GND
+Text Label 1200 7100 0    65   ~ 0
+GND
+Text Label 1200 7200 0    65   ~ 0
+GND
+Text Label 1200 7300 0    65   ~ 0
+GND
+Text Label 1200 7400 0    65   ~ 0
+GND
+Text Label 1200 7500 0    65   ~ 0
+GND
+Text Label 1200 7600 0    65   ~ 0
+GND
+Text Label 2250 700  0    65   ~ 0
+GND
+Text Label 2250 800  0    65   ~ 0
+GND
+Text Label 2250 900  0    65   ~ 0
+GND
+Text Label 2250 1000 0    65   ~ 0
+GND
+Text Label 2250 1100 0    65   ~ 0
+GND
+Text Label 2250 1200 0    65   ~ 0
+GND
+Text Label 2250 1300 0    65   ~ 0
+GND
+Text Label 2250 1400 0    65   ~ 0
+GND
+Text Label 2250 1500 0    65   ~ 0
+GND
+Text Label 2250 1600 0    65   ~ 0
+GND
+Text Label 2250 1700 0    65   ~ 0
+GND
+Text Label 2250 1800 0    65   ~ 0
+GND
+Text Label 2250 1900 0    65   ~ 0
+GND
+Text Label 2250 2000 0    65   ~ 0
+GND
+Text Label 2250 2100 0    65   ~ 0
+GND
+Text Label 2250 2200 0    65   ~ 0
+GND
+Text Label 2250 2300 0    65   ~ 0
+GND
+Text Label 2250 2400 0    65   ~ 0
+GND
+Text Label 2250 2500 0    65   ~ 0
+GND
+Text Label 2250 2600 0    65   ~ 0
+GND
+Text Label 2250 2700 0    65   ~ 0
+GND
+Text Label 2250 2800 0    65   ~ 0
+GND
+Text Label 2250 2900 0    65   ~ 0
+GND
+Text Label 2250 3000 0    65   ~ 0
+GND
+Text Label 2250 3100 0    65   ~ 0
+GND
+Text Label 2250 3200 0    65   ~ 0
+GND
+Text Label 2250 3300 0    65   ~ 0
+GND
+Text Label 2250 3400 0    65   ~ 0
+GND
+Text Label 2250 3500 0    65   ~ 0
+GND
+Text Label 2250 3600 0    65   ~ 0
+GND
+Text Label 2250 3700 0    65   ~ 0
+GND
+Text Label 2250 3800 0    65   ~ 0
+GND
+Text Label 2250 3900 0    65   ~ 0
+GND
+Text Label 2250 4000 0    65   ~ 0
+GND
+Text Label 2250 4100 0    65   ~ 0
+GND
+Text Label 2250 4200 0    65   ~ 0
+GND
+Text Label 2250 4300 0    65   ~ 0
+GND
+Text Label 2250 4400 0    65   ~ 0
+GND
+Text Label 2250 4500 0    65   ~ 0
+GND
+Text Label 2250 4600 0    65   ~ 0
+GND
+Text Label 2250 4700 0    65   ~ 0
+GND
+Text Label 2250 4800 0    65   ~ 0
+GND
+Text Label 2250 4900 0    65   ~ 0
+GND
+Text Label 2250 5000 0    65   ~ 0
+GND
+Text Label 2250 5100 0    65   ~ 0
+GND
+Text Label 2250 5200 0    65   ~ 0
+GND
+Text Label 2250 5300 0    65   ~ 0
+GND
+Text Label 2250 5400 0    65   ~ 0
+GND
+Text Label 2250 5500 0    65   ~ 0
+GND
+Text Label 2250 5600 0    65   ~ 0
+GND
+Text Label 2250 5700 0    65   ~ 0
+GND
+Text Label 2250 5800 0    65   ~ 0
+GND
+Text Label 2250 5900 0    65   ~ 0
+GND
+Text Label 2250 6000 0    65   ~ 0
+GND
+Text Label 2250 6100 0    65   ~ 0
+GND
+Text Label 2250 6200 0    65   ~ 0
+GND
+Text Label 2250 6300 0    65   ~ 0
+GND
+Text Label 2250 6400 0    65   ~ 0
+GND
+Text Label 2250 6500 0    65   ~ 0
+GND
+Text Label 2250 6600 0    65   ~ 0
+GND
+Text Label 1200 700  0    65   ~ 0
+GND
+$Comp
+L via V6
+U 1 1 587D6F87
+P 1200 1200
+F 0 "V6" H 1500 1200 60  0000 C CNN
+F 1 "via" H 1650 1200 60  0000 C CNN
+F 2 "main:via" H 1200 1200 60  0001 C CNN
+F 3 "" H 1200 1200 60  0000 C CNN
+	1    1200 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V7
+U 1 1 587D7030
+P 1200 1300
+F 0 "V7" H 1500 1300 60  0000 C CNN
+F 1 "via" H 1650 1300 60  0000 C CNN
+F 2 "main:via" H 1200 1300 60  0001 C CNN
+F 3 "" H 1200 1300 60  0000 C CNN
+	1    1200 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V8
+U 1 1 587D71A2
+P 1200 1400
+F 0 "V8" H 1500 1400 60  0000 C CNN
+F 1 "via" H 1650 1400 60  0000 C CNN
+F 2 "main:via" H 1200 1400 60  0001 C CNN
+F 3 "" H 1200 1400 60  0000 C CNN
+	1    1200 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V9
+U 1 1 587D71A8
+P 1200 1500
+F 0 "V9" H 1500 1500 60  0000 C CNN
+F 1 "via" H 1650 1500 60  0000 C CNN
+F 2 "main:via" H 1200 1500 60  0001 C CNN
+F 3 "" H 1200 1500 60  0000 C CNN
+	1    1200 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V10
+U 1 1 587D71AE
+P 1200 1600
+F 0 "V10" H 1500 1600 60  0000 C CNN
+F 1 "via" H 1650 1600 60  0000 C CNN
+F 2 "main:via" H 1200 1600 60  0001 C CNN
+F 3 "" H 1200 1600 60  0000 C CNN
+	1    1200 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V11
+U 1 1 587D71B4
+P 1200 1700
+F 0 "V11" H 1500 1700 60  0000 C CNN
+F 1 "via" H 1650 1700 60  0000 C CNN
+F 2 "main:via" H 1200 1700 60  0001 C CNN
+F 3 "" H 1200 1700 60  0000 C CNN
+	1    1200 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V12
+U 1 1 587D71BA
+P 1200 1800
+F 0 "V12" H 1500 1800 60  0000 C CNN
+F 1 "via" H 1650 1800 60  0000 C CNN
+F 2 "main:via" H 1200 1800 60  0001 C CNN
+F 3 "" H 1200 1800 60  0000 C CNN
+	1    1200 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V13
+U 1 1 587D71C0
+P 1200 1900
+F 0 "V13" H 1500 1900 60  0000 C CNN
+F 1 "via" H 1650 1900 60  0000 C CNN
+F 2 "main:via" H 1200 1900 60  0001 C CNN
+F 3 "" H 1200 1900 60  0000 C CNN
+	1    1200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V14
+U 1 1 587D71C6
+P 1200 2000
+F 0 "V14" H 1500 2000 60  0000 C CNN
+F 1 "via" H 1650 2000 60  0000 C CNN
+F 2 "main:via" H 1200 2000 60  0001 C CNN
+F 3 "" H 1200 2000 60  0000 C CNN
+	1    1200 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V15
+U 1 1 587D75FC
+P 1200 2100
+F 0 "V15" H 1500 2100 60  0000 C CNN
+F 1 "via" H 1650 2100 60  0000 C CNN
+F 2 "main:via" H 1200 2100 60  0001 C CNN
+F 3 "" H 1200 2100 60  0000 C CNN
+	1    1200 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V16
+U 1 1 587D7602
+P 1200 2200
+F 0 "V16" H 1500 2200 60  0000 C CNN
+F 1 "via" H 1650 2200 60  0000 C CNN
+F 2 "main:via" H 1200 2200 60  0001 C CNN
+F 3 "" H 1200 2200 60  0000 C CNN
+	1    1200 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V17
+U 1 1 587D7608
+P 1200 2300
+F 0 "V17" H 1500 2300 60  0000 C CNN
+F 1 "via" H 1650 2300 60  0000 C CNN
+F 2 "main:via" H 1200 2300 60  0001 C CNN
+F 3 "" H 1200 2300 60  0000 C CNN
+	1    1200 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V18
+U 1 1 587D760E
+P 1200 2400
+F 0 "V18" H 1500 2400 60  0000 C CNN
+F 1 "via" H 1650 2400 60  0000 C CNN
+F 2 "main:via" H 1200 2400 60  0001 C CNN
+F 3 "" H 1200 2400 60  0000 C CNN
+	1    1200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V19
+U 1 1 587D7614
+P 1200 2500
+F 0 "V19" H 1500 2500 60  0000 C CNN
+F 1 "via" H 1650 2500 60  0000 C CNN
+F 2 "main:via" H 1200 2500 60  0001 C CNN
+F 3 "" H 1200 2500 60  0000 C CNN
+	1    1200 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V20
+U 1 1 587D761A
+P 1200 2600
+F 0 "V20" H 1500 2600 60  0000 C CNN
+F 1 "via" H 1650 2600 60  0000 C CNN
+F 2 "main:via" H 1200 2600 60  0001 C CNN
+F 3 "" H 1200 2600 60  0000 C CNN
+	1    1200 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V21
+U 1 1 587D7620
+P 1200 2700
+F 0 "V21" H 1500 2700 60  0000 C CNN
+F 1 "via" H 1650 2700 60  0000 C CNN
+F 2 "main:via" H 1200 2700 60  0001 C CNN
+F 3 "" H 1200 2700 60  0000 C CNN
+	1    1200 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V22
+U 1 1 587D7626
+P 1200 2800
+F 0 "V22" H 1500 2800 60  0000 C CNN
+F 1 "via" H 1650 2800 60  0000 C CNN
+F 2 "main:via" H 1200 2800 60  0001 C CNN
+F 3 "" H 1200 2800 60  0000 C CNN
+	1    1200 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V23
+U 1 1 587D762C
+P 1200 2900
+F 0 "V23" H 1500 2900 60  0000 C CNN
+F 1 "via" H 1650 2900 60  0000 C CNN
+F 2 "main:via" H 1200 2900 60  0001 C CNN
+F 3 "" H 1200 2900 60  0000 C CNN
+	1    1200 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V24
+U 1 1 587D7632
+P 1200 3000
+F 0 "V24" H 1500 3000 60  0000 C CNN
+F 1 "via" H 1650 3000 60  0000 C CNN
+F 2 "main:via" H 1200 3000 60  0001 C CNN
+F 3 "" H 1200 3000 60  0000 C CNN
+	1    1200 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V25
+U 1 1 587D7638
+P 1200 3100
+F 0 "V25" H 1500 3100 60  0000 C CNN
+F 1 "via" H 1650 3100 60  0000 C CNN
+F 2 "main:via" H 1200 3100 60  0001 C CNN
+F 3 "" H 1200 3100 60  0000 C CNN
+	1    1200 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V26
+U 1 1 587D763E
+P 1200 3200
+F 0 "V26" H 1500 3200 60  0000 C CNN
+F 1 "via" H 1650 3200 60  0000 C CNN
+F 2 "main:via" H 1200 3200 60  0001 C CNN
+F 3 "" H 1200 3200 60  0000 C CNN
+	1    1200 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V27
+U 1 1 587D7644
+P 1200 3300
+F 0 "V27" H 1500 3300 60  0000 C CNN
+F 1 "via" H 1650 3300 60  0000 C CNN
+F 2 "main:via" H 1200 3300 60  0001 C CNN
+F 3 "" H 1200 3300 60  0000 C CNN
+	1    1200 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V28
+U 1 1 587D764A
+P 1200 3400
+F 0 "V28" H 1500 3400 60  0000 C CNN
+F 1 "via" H 1650 3400 60  0000 C CNN
+F 2 "main:via" H 1200 3400 60  0001 C CNN
+F 3 "" H 1200 3400 60  0000 C CNN
+	1    1200 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V29
+U 1 1 587D7C86
+P 1200 3500
+F 0 "V29" H 1500 3500 60  0000 C CNN
+F 1 "via" H 1650 3500 60  0000 C CNN
+F 2 "main:via" H 1200 3500 60  0001 C CNN
+F 3 "" H 1200 3500 60  0000 C CNN
+	1    1200 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V30
+U 1 1 587D7C8C
+P 1200 3600
+F 0 "V30" H 1500 3600 60  0000 C CNN
+F 1 "via" H 1650 3600 60  0000 C CNN
+F 2 "main:via" H 1200 3600 60  0001 C CNN
+F 3 "" H 1200 3600 60  0000 C CNN
+	1    1200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V31
+U 1 1 587D7C92
+P 1200 3700
+F 0 "V31" H 1500 3700 60  0000 C CNN
+F 1 "via" H 1650 3700 60  0000 C CNN
+F 2 "main:via" H 1200 3700 60  0001 C CNN
+F 3 "" H 1200 3700 60  0000 C CNN
+	1    1200 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V32
+U 1 1 587D7C98
+P 1200 3800
+F 0 "V32" H 1500 3800 60  0000 C CNN
+F 1 "via" H 1650 3800 60  0000 C CNN
+F 2 "main:via" H 1200 3800 60  0001 C CNN
+F 3 "" H 1200 3800 60  0000 C CNN
+	1    1200 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V33
+U 1 1 587D7C9E
+P 1200 3900
+F 0 "V33" H 1500 3900 60  0000 C CNN
+F 1 "via" H 1650 3900 60  0000 C CNN
+F 2 "main:via" H 1200 3900 60  0001 C CNN
+F 3 "" H 1200 3900 60  0000 C CNN
+	1    1200 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V34
+U 1 1 587D7CA4
+P 1200 4000
+F 0 "V34" H 1500 4000 60  0000 C CNN
+F 1 "via" H 1650 4000 60  0000 C CNN
+F 2 "main:via" H 1200 4000 60  0001 C CNN
+F 3 "" H 1200 4000 60  0000 C CNN
+	1    1200 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V35
+U 1 1 587D7CAA
+P 1200 4100
+F 0 "V35" H 1500 4100 60  0000 C CNN
+F 1 "via" H 1650 4100 60  0000 C CNN
+F 2 "main:via" H 1200 4100 60  0001 C CNN
+F 3 "" H 1200 4100 60  0000 C CNN
+	1    1200 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V36
+U 1 1 587D7CB0
+P 1200 4200
+F 0 "V36" H 1500 4200 60  0000 C CNN
+F 1 "via" H 1650 4200 60  0000 C CNN
+F 2 "main:via" H 1200 4200 60  0001 C CNN
+F 3 "" H 1200 4200 60  0000 C CNN
+	1    1200 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V37
+U 1 1 587D7CB6
+P 1200 4300
+F 0 "V37" H 1500 4300 60  0000 C CNN
+F 1 "via" H 1650 4300 60  0000 C CNN
+F 2 "main:via" H 1200 4300 60  0001 C CNN
+F 3 "" H 1200 4300 60  0000 C CNN
+	1    1200 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V38
+U 1 1 587D7CBC
+P 1200 4400
+F 0 "V38" H 1500 4400 60  0000 C CNN
+F 1 "via" H 1650 4400 60  0000 C CNN
+F 2 "main:via" H 1200 4400 60  0001 C CNN
+F 3 "" H 1200 4400 60  0000 C CNN
+	1    1200 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V39
+U 1 1 587D7CC2
+P 1200 4500
+F 0 "V39" H 1500 4500 60  0000 C CNN
+F 1 "via" H 1650 4500 60  0000 C CNN
+F 2 "main:via" H 1200 4500 60  0001 C CNN
+F 3 "" H 1200 4500 60  0000 C CNN
+	1    1200 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V40
+U 1 1 587D7CC8
+P 1200 4600
+F 0 "V40" H 1500 4600 60  0000 C CNN
+F 1 "via" H 1650 4600 60  0000 C CNN
+F 2 "main:via" H 1200 4600 60  0001 C CNN
+F 3 "" H 1200 4600 60  0000 C CNN
+	1    1200 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V41
+U 1 1 587D7CCE
+P 1200 4700
+F 0 "V41" H 1500 4700 60  0000 C CNN
+F 1 "via" H 1650 4700 60  0000 C CNN
+F 2 "main:via" H 1200 4700 60  0001 C CNN
+F 3 "" H 1200 4700 60  0000 C CNN
+	1    1200 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V42
+U 1 1 587D7CD4
+P 1200 4800
+F 0 "V42" H 1500 4800 60  0000 C CNN
+F 1 "via" H 1650 4800 60  0000 C CNN
+F 2 "main:via" H 1200 4800 60  0001 C CNN
+F 3 "" H 1200 4800 60  0000 C CNN
+	1    1200 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V43
+U 1 1 587D7CDA
+P 1200 4900
+F 0 "V43" H 1500 4900 60  0000 C CNN
+F 1 "via" H 1650 4900 60  0000 C CNN
+F 2 "main:via" H 1200 4900 60  0001 C CNN
+F 3 "" H 1200 4900 60  0000 C CNN
+	1    1200 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V44
+U 1 1 587D7CE0
+P 1200 5000
+F 0 "V44" H 1500 5000 60  0000 C CNN
+F 1 "via" H 1650 5000 60  0000 C CNN
+F 2 "main:via" H 1200 5000 60  0001 C CNN
+F 3 "" H 1200 5000 60  0000 C CNN
+	1    1200 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V45
+U 1 1 587D7CE6
+P 1200 5100
+F 0 "V45" H 1500 5100 60  0000 C CNN
+F 1 "via" H 1650 5100 60  0000 C CNN
+F 2 "main:via" H 1200 5100 60  0001 C CNN
+F 3 "" H 1200 5100 60  0000 C CNN
+	1    1200 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V46
+U 1 1 587D7CEC
+P 1200 5200
+F 0 "V46" H 1500 5200 60  0000 C CNN
+F 1 "via" H 1650 5200 60  0000 C CNN
+F 2 "main:via" H 1200 5200 60  0001 C CNN
+F 3 "" H 1200 5200 60  0000 C CNN
+	1    1200 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V47
+U 1 1 587D7CF2
+P 1200 5300
+F 0 "V47" H 1500 5300 60  0000 C CNN
+F 1 "via" H 1650 5300 60  0000 C CNN
+F 2 "main:via" H 1200 5300 60  0001 C CNN
+F 3 "" H 1200 5300 60  0000 C CNN
+	1    1200 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V48
+U 1 1 587D7CF8
+P 1200 5400
+F 0 "V48" H 1500 5400 60  0000 C CNN
+F 1 "via" H 1650 5400 60  0000 C CNN
+F 2 "main:via" H 1200 5400 60  0001 C CNN
+F 3 "" H 1200 5400 60  0000 C CNN
+	1    1200 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V49
+U 1 1 587D7CFE
+P 1200 5500
+F 0 "V49" H 1500 5500 60  0000 C CNN
+F 1 "via" H 1650 5500 60  0000 C CNN
+F 2 "main:via" H 1200 5500 60  0001 C CNN
+F 3 "" H 1200 5500 60  0000 C CNN
+	1    1200 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V50
+U 1 1 587D7D04
+P 1200 5600
+F 0 "V50" H 1500 5600 60  0000 C CNN
+F 1 "via" H 1650 5600 60  0000 C CNN
+F 2 "main:via" H 1200 5600 60  0001 C CNN
+F 3 "" H 1200 5600 60  0000 C CNN
+	1    1200 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V51
+U 1 1 587D7D0A
+P 1200 5700
+F 0 "V51" H 1500 5700 60  0000 C CNN
+F 1 "via" H 1650 5700 60  0000 C CNN
+F 2 "main:via" H 1200 5700 60  0001 C CNN
+F 3 "" H 1200 5700 60  0000 C CNN
+	1    1200 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V52
+U 1 1 587D7D10
+P 1200 5800
+F 0 "V52" H 1500 5800 60  0000 C CNN
+F 1 "via" H 1650 5800 60  0000 C CNN
+F 2 "main:via" H 1200 5800 60  0001 C CNN
+F 3 "" H 1200 5800 60  0000 C CNN
+	1    1200 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V53
+U 1 1 587D7D16
+P 1200 5900
+F 0 "V53" H 1500 5900 60  0000 C CNN
+F 1 "via" H 1650 5900 60  0000 C CNN
+F 2 "main:via" H 1200 5900 60  0001 C CNN
+F 3 "" H 1200 5900 60  0000 C CNN
+	1    1200 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V54
+U 1 1 587D7D1C
+P 1200 6000
+F 0 "V54" H 1500 6000 60  0000 C CNN
+F 1 "via" H 1650 6000 60  0000 C CNN
+F 2 "main:via" H 1200 6000 60  0001 C CNN
+F 3 "" H 1200 6000 60  0000 C CNN
+	1    1200 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V55
+U 1 1 587D7D22
+P 1200 6100
+F 0 "V55" H 1500 6100 60  0000 C CNN
+F 1 "via" H 1650 6100 60  0000 C CNN
+F 2 "main:via" H 1200 6100 60  0001 C CNN
+F 3 "" H 1200 6100 60  0000 C CNN
+	1    1200 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V56
+U 1 1 587D7D28
+P 1200 6200
+F 0 "V56" H 1500 6200 60  0000 C CNN
+F 1 "via" H 1650 6200 60  0000 C CNN
+F 2 "main:via" H 1200 6200 60  0001 C CNN
+F 3 "" H 1200 6200 60  0000 C CNN
+	1    1200 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V77
+U 1 1 587D96F6
+P 2250 1300
+F 0 "V77" H 2550 1300 60  0000 C CNN
+F 1 "via" H 2700 1300 60  0000 C CNN
+F 2 "main:via" H 2250 1300 60  0001 C CNN
+F 3 "" H 2250 1300 60  0000 C CNN
+	1    2250 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V78
+U 1 1 587D96FC
+P 2250 1400
+F 0 "V78" H 2550 1400 60  0000 C CNN
+F 1 "via" H 2700 1400 60  0000 C CNN
+F 2 "main:via" H 2250 1400 60  0001 C CNN
+F 3 "" H 2250 1400 60  0000 C CNN
+	1    2250 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V79
+U 1 1 587D9702
+P 2250 1500
+F 0 "V79" H 2550 1500 60  0000 C CNN
+F 1 "via" H 2700 1500 60  0000 C CNN
+F 2 "main:via" H 2250 1500 60  0001 C CNN
+F 3 "" H 2250 1500 60  0000 C CNN
+	1    2250 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V80
+U 1 1 587D9708
+P 2250 1600
+F 0 "V80" H 2550 1600 60  0000 C CNN
+F 1 "via" H 2700 1600 60  0000 C CNN
+F 2 "main:via" H 2250 1600 60  0001 C CNN
+F 3 "" H 2250 1600 60  0000 C CNN
+	1    2250 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V81
+U 1 1 587D970E
+P 2250 1700
+F 0 "V81" H 2550 1700 60  0000 C CNN
+F 1 "via" H 2700 1700 60  0000 C CNN
+F 2 "main:via" H 2250 1700 60  0001 C CNN
+F 3 "" H 2250 1700 60  0000 C CNN
+	1    2250 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V82
+U 1 1 587D9714
+P 2250 1800
+F 0 "V82" H 2550 1800 60  0000 C CNN
+F 1 "via" H 2700 1800 60  0000 C CNN
+F 2 "main:via" H 2250 1800 60  0001 C CNN
+F 3 "" H 2250 1800 60  0000 C CNN
+	1    2250 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V83
+U 1 1 587D971A
+P 2250 1900
+F 0 "V83" H 2550 1900 60  0000 C CNN
+F 1 "via" H 2700 1900 60  0000 C CNN
+F 2 "main:via" H 2250 1900 60  0001 C CNN
+F 3 "" H 2250 1900 60  0000 C CNN
+	1    2250 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V84
+U 1 1 587D9720
+P 2250 2000
+F 0 "V84" H 2550 2000 60  0000 C CNN
+F 1 "via" H 2700 2000 60  0000 C CNN
+F 2 "main:via" H 2250 2000 60  0001 C CNN
+F 3 "" H 2250 2000 60  0000 C CNN
+	1    2250 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V85
+U 1 1 587D9726
+P 2250 2100
+F 0 "V85" H 2550 2100 60  0000 C CNN
+F 1 "via" H 2700 2100 60  0000 C CNN
+F 2 "main:via" H 2250 2100 60  0001 C CNN
+F 3 "" H 2250 2100 60  0000 C CNN
+	1    2250 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V86
+U 1 1 587D972C
+P 2250 2200
+F 0 "V86" H 2550 2200 60  0000 C CNN
+F 1 "via" H 2700 2200 60  0000 C CNN
+F 2 "main:via" H 2250 2200 60  0001 C CNN
+F 3 "" H 2250 2200 60  0000 C CNN
+	1    2250 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V87
+U 1 1 587D9732
+P 2250 2300
+F 0 "V87" H 2550 2300 60  0000 C CNN
+F 1 "via" H 2700 2300 60  0000 C CNN
+F 2 "main:via" H 2250 2300 60  0001 C CNN
+F 3 "" H 2250 2300 60  0000 C CNN
+	1    2250 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V88
+U 1 1 587D9738
+P 2250 2400
+F 0 "V88" H 2550 2400 60  0000 C CNN
+F 1 "via" H 2700 2400 60  0000 C CNN
+F 2 "main:via" H 2250 2400 60  0001 C CNN
+F 3 "" H 2250 2400 60  0000 C CNN
+	1    2250 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V89
+U 1 1 587D973E
+P 2250 2500
+F 0 "V89" H 2550 2500 60  0000 C CNN
+F 1 "via" H 2700 2500 60  0000 C CNN
+F 2 "main:via" H 2250 2500 60  0001 C CNN
+F 3 "" H 2250 2500 60  0000 C CNN
+	1    2250 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V90
+U 1 1 587D9744
+P 2250 2600
+F 0 "V90" H 2550 2600 60  0000 C CNN
+F 1 "via" H 2700 2600 60  0000 C CNN
+F 2 "main:via" H 2250 2600 60  0001 C CNN
+F 3 "" H 2250 2600 60  0000 C CNN
+	1    2250 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V91
+U 1 1 587D974A
+P 2250 2700
+F 0 "V91" H 2550 2700 60  0000 C CNN
+F 1 "via" H 2700 2700 60  0000 C CNN
+F 2 "main:via" H 2250 2700 60  0001 C CNN
+F 3 "" H 2250 2700 60  0000 C CNN
+	1    2250 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V92
+U 1 1 587D9750
+P 2250 2800
+F 0 "V92" H 2550 2800 60  0000 C CNN
+F 1 "via" H 2700 2800 60  0000 C CNN
+F 2 "main:via" H 2250 2800 60  0001 C CNN
+F 3 "" H 2250 2800 60  0000 C CNN
+	1    2250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V93
+U 1 1 587D9756
+P 2250 2900
+F 0 "V93" H 2550 2900 60  0000 C CNN
+F 1 "via" H 2700 2900 60  0000 C CNN
+F 2 "main:via" H 2250 2900 60  0001 C CNN
+F 3 "" H 2250 2900 60  0000 C CNN
+	1    2250 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V94
+U 1 1 587D975C
+P 2250 3000
+F 0 "V94" H 2550 3000 60  0000 C CNN
+F 1 "via" H 2700 3000 60  0000 C CNN
+F 2 "main:via" H 2250 3000 60  0001 C CNN
+F 3 "" H 2250 3000 60  0000 C CNN
+	1    2250 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V95
+U 1 1 587D9762
+P 2250 3100
+F 0 "V95" H 2550 3100 60  0000 C CNN
+F 1 "via" H 2700 3100 60  0000 C CNN
+F 2 "main:via" H 2250 3100 60  0001 C CNN
+F 3 "" H 2250 3100 60  0000 C CNN
+	1    2250 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V96
+U 1 1 587D9768
+P 2250 3200
+F 0 "V96" H 2550 3200 60  0000 C CNN
+F 1 "via" H 2700 3200 60  0000 C CNN
+F 2 "main:via" H 2250 3200 60  0001 C CNN
+F 3 "" H 2250 3200 60  0000 C CNN
+	1    2250 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V97
+U 1 1 587D976E
+P 2250 3300
+F 0 "V97" H 2550 3300 60  0000 C CNN
+F 1 "via" H 2700 3300 60  0000 C CNN
+F 2 "main:via" H 2250 3300 60  0001 C CNN
+F 3 "" H 2250 3300 60  0000 C CNN
+	1    2250 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V98
+U 1 1 587D9774
+P 2250 3400
+F 0 "V98" H 2550 3400 60  0000 C CNN
+F 1 "via" H 2700 3400 60  0000 C CNN
+F 2 "main:via" H 2250 3400 60  0001 C CNN
+F 3 "" H 2250 3400 60  0000 C CNN
+	1    2250 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V99
+U 1 1 587D977A
+P 2250 3500
+F 0 "V99" H 2550 3500 60  0000 C CNN
+F 1 "via" H 2700 3500 60  0000 C CNN
+F 2 "main:via" H 2250 3500 60  0001 C CNN
+F 3 "" H 2250 3500 60  0000 C CNN
+	1    2250 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V100
+U 1 1 587D9780
+P 2250 3600
+F 0 "V100" H 2550 3600 60  0000 C CNN
+F 1 "via" H 2700 3600 60  0000 C CNN
+F 2 "main:via" H 2250 3600 60  0001 C CNN
+F 3 "" H 2250 3600 60  0000 C CNN
+	1    2250 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V101
+U 1 1 587D9786
+P 2250 3700
+F 0 "V101" H 2550 3700 60  0000 C CNN
+F 1 "via" H 2700 3700 60  0000 C CNN
+F 2 "main:via" H 2250 3700 60  0001 C CNN
+F 3 "" H 2250 3700 60  0000 C CNN
+	1    2250 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V102
+U 1 1 587D978C
+P 2250 3800
+F 0 "V102" H 2550 3800 60  0000 C CNN
+F 1 "via" H 2700 3800 60  0000 C CNN
+F 2 "main:via" H 2250 3800 60  0001 C CNN
+F 3 "" H 2250 3800 60  0000 C CNN
+	1    2250 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V103
+U 1 1 587D9792
+P 2250 3900
+F 0 "V103" H 2550 3900 60  0000 C CNN
+F 1 "via" H 2700 3900 60  0000 C CNN
+F 2 "main:via" H 2250 3900 60  0001 C CNN
+F 3 "" H 2250 3900 60  0000 C CNN
+	1    2250 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V104
+U 1 1 587D9798
+P 2250 4000
+F 0 "V104" H 2550 4000 60  0000 C CNN
+F 1 "via" H 2700 4000 60  0000 C CNN
+F 2 "main:via" H 2250 4000 60  0001 C CNN
+F 3 "" H 2250 4000 60  0000 C CNN
+	1    2250 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V105
+U 1 1 587D979E
+P 2250 4100
+F 0 "V105" H 2550 4100 60  0000 C CNN
+F 1 "via" H 2700 4100 60  0000 C CNN
+F 2 "main:via" H 2250 4100 60  0001 C CNN
+F 3 "" H 2250 4100 60  0000 C CNN
+	1    2250 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V106
+U 1 1 587D97A4
+P 2250 4200
+F 0 "V106" H 2550 4200 60  0000 C CNN
+F 1 "via" H 2700 4200 60  0000 C CNN
+F 2 "main:via" H 2250 4200 60  0001 C CNN
+F 3 "" H 2250 4200 60  0000 C CNN
+	1    2250 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V107
+U 1 1 587D97AA
+P 2250 4300
+F 0 "V107" H 2550 4300 60  0000 C CNN
+F 1 "via" H 2700 4300 60  0000 C CNN
+F 2 "main:via" H 2250 4300 60  0001 C CNN
+F 3 "" H 2250 4300 60  0000 C CNN
+	1    2250 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V108
+U 1 1 587D97B0
+P 2250 4400
+F 0 "V108" H 2550 4400 60  0000 C CNN
+F 1 "via" H 2700 4400 60  0000 C CNN
+F 2 "main:via" H 2250 4400 60  0001 C CNN
+F 3 "" H 2250 4400 60  0000 C CNN
+	1    2250 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V109
+U 1 1 587D97B6
+P 2250 4500
+F 0 "V109" H 2550 4500 60  0000 C CNN
+F 1 "via" H 2700 4500 60  0000 C CNN
+F 2 "main:via" H 2250 4500 60  0001 C CNN
+F 3 "" H 2250 4500 60  0000 C CNN
+	1    2250 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V110
+U 1 1 587D97BC
+P 2250 4600
+F 0 "V110" H 2550 4600 60  0000 C CNN
+F 1 "via" H 2700 4600 60  0000 C CNN
+F 2 "main:via" H 2250 4600 60  0001 C CNN
+F 3 "" H 2250 4600 60  0000 C CNN
+	1    2250 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V111
+U 1 1 587D97C2
+P 2250 4700
+F 0 "V111" H 2550 4700 60  0000 C CNN
+F 1 "via" H 2700 4700 60  0000 C CNN
+F 2 "main:via" H 2250 4700 60  0001 C CNN
+F 3 "" H 2250 4700 60  0000 C CNN
+	1    2250 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V112
+U 1 1 587D97C8
+P 2250 4800
+F 0 "V112" H 2550 4800 60  0000 C CNN
+F 1 "via" H 2700 4800 60  0000 C CNN
+F 2 "main:via" H 2250 4800 60  0001 C CNN
+F 3 "" H 2250 4800 60  0000 C CNN
+	1    2250 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V113
+U 1 1 587D97CE
+P 2250 4900
+F 0 "V113" H 2550 4900 60  0000 C CNN
+F 1 "via" H 2700 4900 60  0000 C CNN
+F 2 "main:via" H 2250 4900 60  0001 C CNN
+F 3 "" H 2250 4900 60  0000 C CNN
+	1    2250 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V114
+U 1 1 587D97D4
+P 2250 5000
+F 0 "V114" H 2550 5000 60  0000 C CNN
+F 1 "via" H 2700 5000 60  0000 C CNN
+F 2 "main:via" H 2250 5000 60  0001 C CNN
+F 3 "" H 2250 5000 60  0000 C CNN
+	1    2250 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V115
+U 1 1 587D97DA
+P 2250 5100
+F 0 "V115" H 2550 5100 60  0000 C CNN
+F 1 "via" H 2700 5100 60  0000 C CNN
+F 2 "main:via" H 2250 5100 60  0001 C CNN
+F 3 "" H 2250 5100 60  0000 C CNN
+	1    2250 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V116
+U 1 1 587D97E0
+P 2250 5200
+F 0 "V116" H 2550 5200 60  0000 C CNN
+F 1 "via" H 2700 5200 60  0000 C CNN
+F 2 "main:via" H 2250 5200 60  0001 C CNN
+F 3 "" H 2250 5200 60  0000 C CNN
+	1    2250 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V117
+U 1 1 587D97E6
+P 2250 5300
+F 0 "V117" H 2550 5300 60  0000 C CNN
+F 1 "via" H 2700 5300 60  0000 C CNN
+F 2 "main:via" H 2250 5300 60  0001 C CNN
+F 3 "" H 2250 5300 60  0000 C CNN
+	1    2250 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V118
+U 1 1 587D97EC
+P 2250 5400
+F 0 "V118" H 2550 5400 60  0000 C CNN
+F 1 "via" H 2700 5400 60  0000 C CNN
+F 2 "main:via" H 2250 5400 60  0001 C CNN
+F 3 "" H 2250 5400 60  0000 C CNN
+	1    2250 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V119
+U 1 1 587D97F2
+P 2250 5500
+F 0 "V119" H 2550 5500 60  0000 C CNN
+F 1 "via" H 2700 5500 60  0000 C CNN
+F 2 "main:via" H 2250 5500 60  0001 C CNN
+F 3 "" H 2250 5500 60  0000 C CNN
+	1    2250 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V120
+U 1 1 587D97F8
+P 2250 5600
+F 0 "V120" H 2550 5600 60  0000 C CNN
+F 1 "via" H 2700 5600 60  0000 C CNN
+F 2 "main:via" H 2250 5600 60  0001 C CNN
+F 3 "" H 2250 5600 60  0000 C CNN
+	1    2250 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V121
+U 1 1 587D97FE
+P 2250 5700
+F 0 "V121" H 2550 5700 60  0000 C CNN
+F 1 "via" H 2700 5700 60  0000 C CNN
+F 2 "main:via" H 2250 5700 60  0001 C CNN
+F 3 "" H 2250 5700 60  0000 C CNN
+	1    2250 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V122
+U 1 1 587D9804
+P 2250 5800
+F 0 "V122" H 2550 5800 60  0000 C CNN
+F 1 "via" H 2700 5800 60  0000 C CNN
+F 2 "main:via" H 2250 5800 60  0001 C CNN
+F 3 "" H 2250 5800 60  0000 C CNN
+	1    2250 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V123
+U 1 1 587D980A
+P 2250 5900
+F 0 "V123" H 2550 5900 60  0000 C CNN
+F 1 "via" H 2700 5900 60  0000 C CNN
+F 2 "main:via" H 2250 5900 60  0001 C CNN
+F 3 "" H 2250 5900 60  0000 C CNN
+	1    2250 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V124
+U 1 1 587D9810
+P 2250 6000
+F 0 "V124" H 2550 6000 60  0000 C CNN
+F 1 "via" H 2700 6000 60  0000 C CNN
+F 2 "main:via" H 2250 6000 60  0001 C CNN
+F 3 "" H 2250 6000 60  0000 C CNN
+	1    2250 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V125
+U 1 1 587D9816
+P 2250 6100
+F 0 "V125" H 2550 6100 60  0000 C CNN
+F 1 "via" H 2700 6100 60  0000 C CNN
+F 2 "main:via" H 2250 6100 60  0001 C CNN
+F 3 "" H 2250 6100 60  0000 C CNN
+	1    2250 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V126
+U 1 1 587D981C
+P 2250 6200
+F 0 "V126" H 2550 6200 60  0000 C CNN
+F 1 "via" H 2700 6200 60  0000 C CNN
+F 2 "main:via" H 2250 6200 60  0001 C CNN
+F 3 "" H 2250 6200 60  0000 C CNN
+	1    2250 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V127
+U 1 1 587D9822
+P 2250 6300
+F 0 "V127" H 2550 6300 60  0000 C CNN
+F 1 "via" H 2700 6300 60  0000 C CNN
+F 2 "main:via" H 2250 6300 60  0001 C CNN
+F 3 "" H 2250 6300 60  0000 C CNN
+	1    2250 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V128
+U 1 1 587D9828
+P 2250 6400
+F 0 "V128" H 2550 6400 60  0000 C CNN
+F 1 "via" H 2700 6400 60  0000 C CNN
+F 2 "main:via" H 2250 6400 60  0001 C CNN
+F 3 "" H 2250 6400 60  0000 C CNN
+	1    2250 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V129
+U 1 1 587D982E
+P 2250 6500
+F 0 "V129" H 2550 6500 60  0000 C CNN
+F 1 "via" H 2700 6500 60  0000 C CNN
+F 2 "main:via" H 2250 6500 60  0001 C CNN
+F 3 "" H 2250 6500 60  0000 C CNN
+	1    2250 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V130
+U 1 1 587D9834
+P 2250 6600
+F 0 "V130" H 2550 6600 60  0000 C CNN
+F 1 "via" H 2700 6600 60  0000 C CNN
+F 2 "main:via" H 2250 6600 60  0001 C CNN
+F 3 "" H 2250 6600 60  0000 C CNN
+	1    2250 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V131
+U 1 1 587D983A
+P 2250 6700
+F 0 "V131" H 2550 6700 60  0000 C CNN
+F 1 "via" H 2700 6700 60  0000 C CNN
+F 2 "main:via" H 2250 6700 60  0001 C CNN
+F 3 "" H 2250 6700 60  0000 C CNN
+	1    2250 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V57
+U 1 1 587DA73C
+P 1200 6300
+F 0 "V57" H 1500 6300 60  0000 C CNN
+F 1 "via" H 1650 6300 60  0000 C CNN
+F 2 "main:via" H 1200 6300 60  0001 C CNN
+F 3 "" H 1200 6300 60  0000 C CNN
+	1    1200 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V58
+U 1 1 587DA742
+P 1200 6400
+F 0 "V58" H 1500 6400 60  0000 C CNN
+F 1 "via" H 1650 6400 60  0000 C CNN
+F 2 "main:via" H 1200 6400 60  0001 C CNN
+F 3 "" H 1200 6400 60  0000 C CNN
+	1    1200 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V59
+U 1 1 587DA748
+P 1200 6500
+F 0 "V59" H 1500 6500 60  0000 C CNN
+F 1 "via" H 1650 6500 60  0000 C CNN
+F 2 "main:via" H 1200 6500 60  0001 C CNN
+F 3 "" H 1200 6500 60  0000 C CNN
+	1    1200 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V60
+U 1 1 587DA74E
+P 1200 6600
+F 0 "V60" H 1500 6600 60  0000 C CNN
+F 1 "via" H 1650 6600 60  0000 C CNN
+F 2 "main:via" H 1200 6600 60  0001 C CNN
+F 3 "" H 1200 6600 60  0000 C CNN
+	1    1200 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V61
+U 1 1 587DA754
+P 1200 6700
+F 0 "V61" H 1500 6700 60  0000 C CNN
+F 1 "via" H 1650 6700 60  0000 C CNN
+F 2 "main:via" H 1200 6700 60  0001 C CNN
+F 3 "" H 1200 6700 60  0000 C CNN
+	1    1200 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V62
+U 1 1 587DA75A
+P 1200 6800
+F 0 "V62" H 1500 6800 60  0000 C CNN
+F 1 "via" H 1650 6800 60  0000 C CNN
+F 2 "main:via" H 1200 6800 60  0001 C CNN
+F 3 "" H 1200 6800 60  0000 C CNN
+	1    1200 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V63
+U 1 1 587DA760
+P 1200 6900
+F 0 "V63" H 1500 6900 60  0000 C CNN
+F 1 "via" H 1650 6900 60  0000 C CNN
+F 2 "main:via" H 1200 6900 60  0001 C CNN
+F 3 "" H 1200 6900 60  0000 C CNN
+	1    1200 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V64
+U 1 1 587DA766
+P 1200 7000
+F 0 "V64" H 1500 7000 60  0000 C CNN
+F 1 "via" H 1650 7000 60  0000 C CNN
+F 2 "main:via" H 1200 7000 60  0001 C CNN
+F 3 "" H 1200 7000 60  0000 C CNN
+	1    1200 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V65
+U 1 1 587DA76C
+P 1200 7100
+F 0 "V65" H 1500 7100 60  0000 C CNN
+F 1 "via" H 1650 7100 60  0000 C CNN
+F 2 "main:via" H 1200 7100 60  0001 C CNN
+F 3 "" H 1200 7100 60  0000 C CNN
+	1    1200 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V66
+U 1 1 587DA772
+P 1200 7200
+F 0 "V66" H 1500 7200 60  0000 C CNN
+F 1 "via" H 1650 7200 60  0000 C CNN
+F 2 "main:via" H 1200 7200 60  0001 C CNN
+F 3 "" H 1200 7200 60  0000 C CNN
+	1    1200 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V67
+U 1 1 587DA778
+P 1200 7300
+F 0 "V67" H 1500 7300 60  0000 C CNN
+F 1 "via" H 1650 7300 60  0000 C CNN
+F 2 "main:via" H 1200 7300 60  0001 C CNN
+F 3 "" H 1200 7300 60  0000 C CNN
+	1    1200 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V68
+U 1 1 587DA77E
+P 1200 7400
+F 0 "V68" H 1500 7400 60  0000 C CNN
+F 1 "via" H 1650 7400 60  0000 C CNN
+F 2 "main:via" H 1200 7400 60  0001 C CNN
+F 3 "" H 1200 7400 60  0000 C CNN
+	1    1200 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V69
+U 1 1 587DA784
+P 1200 7500
+F 0 "V69" H 1500 7500 60  0000 C CNN
+F 1 "via" H 1650 7500 60  0000 C CNN
+F 2 "main:via" H 1200 7500 60  0001 C CNN
+F 3 "" H 1200 7500 60  0000 C CNN
+	1    1200 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V70
+U 1 1 587DA78A
+P 1200 7600
+F 0 "V70" H 1500 7600 60  0000 C CNN
+F 1 "via" H 1650 7600 60  0000 C CNN
+F 2 "main:via" H 1200 7600 60  0001 C CNN
+F 3 "" H 1200 7600 60  0000 C CNN
+	1    1200 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V71
+U 1 1 587DA790
+P 2250 700
+F 0 "V71" H 2550 700 60  0000 C CNN
+F 1 "via" H 2700 700 60  0000 C CNN
+F 2 "main:via" H 2250 700 60  0001 C CNN
+F 3 "" H 2250 700 60  0000 C CNN
+	1    2250 700 
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V72
+U 1 1 587DB033
+P 2250 800
+F 0 "V72" H 2550 800 60  0000 C CNN
+F 1 "via" H 2700 800 60  0000 C CNN
+F 2 "main:via" H 2250 800 60  0001 C CNN
+F 3 "" H 2250 800 60  0000 C CNN
+	1    2250 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V73
+U 1 1 587DB039
+P 2250 900
+F 0 "V73" H 2550 900 60  0000 C CNN
+F 1 "via" H 2700 900 60  0000 C CNN
+F 2 "main:via" H 2250 900 60  0001 C CNN
+F 3 "" H 2250 900 60  0000 C CNN
+	1    2250 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V74
+U 1 1 587DB03F
+P 2250 1000
+F 0 "V74" H 2550 1000 60  0000 C CNN
+F 1 "via" H 2700 1000 60  0000 C CNN
+F 2 "main:via" H 2250 1000 60  0001 C CNN
+F 3 "" H 2250 1000 60  0000 C CNN
+	1    2250 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V75
+U 1 1 587DB045
+P 2250 1100
+F 0 "V75" H 2550 1100 60  0000 C CNN
+F 1 "via" H 2700 1100 60  0000 C CNN
+F 2 "main:via" H 2250 1100 60  0001 C CNN
+F 3 "" H 2250 1100 60  0000 C CNN
+	1    2250 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V76
+U 1 1 587DB04B
+P 2250 1200
+F 0 "V76" H 2550 1200 60  0000 C CNN
+F 1 "via" H 2700 1200 60  0000 C CNN
+F 2 "main:via" H 2250 1200 60  0001 C CNN
+F 3 "" H 2250 1200 60  0000 C CNN
+	1    2250 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L via V132
+U 1 1 587D9840
+P 2250 6800
+F 0 "V132" H 2550 6800 60  0000 C CNN
+F 1 "via" H 2700 6800 60  0000 C CNN
+F 2 "main:via" H 2250 6800 60  0001 C CNN
+F 3 "" H 2250 6800 60  0000 C CNN
+	1    2250 6800
+	-1   0    0    1   
+$EndComp
+Text Label 1200 800  0    65   ~ 0
+GND
+$EndSCHEMATC

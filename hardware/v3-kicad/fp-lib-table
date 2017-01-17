@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name main)(type KiCad)(uri C:/git_bobc/WebRadio/hardware/v3-kicad/main.pretty)(options "")(descr ""))
+)
