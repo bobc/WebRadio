@@ -1,0 +1,9 @@
+(module HOLE (layer F.Cu) (tedit 587E48CD)
+  (fp_text reference @HOLE5 (at 0 0) (layer F.SilkS) hide
+    (effects (font (thickness 0.15)))
+  )
+  (fp_text value Val** (at 0 0) (layer F.SilkS) hide
+    (effects (font (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu))
+)

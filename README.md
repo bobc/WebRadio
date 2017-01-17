@@ -31,3 +31,10 @@ The VS1053 can decode various audio formats, including Ogg Vorbis, MP3, AAC, WMA
 * [ARM WebRadio v1 prototype](http://www.youtube.com/watch?v=I5wxE6ul4LM)
 * [ARM WebRadio v2 demo board](http://www.youtube.com/watch?v=boI7PvBz0HM)
 * [ARM WebRadio v3](http://www.youtube.com/watch?v=70_Qk82P8Xw)
+
+## Notes on this fork
+
+The LM3S6950 is obsolete, there is no equivalent.
+The S65 LCD may be hard to find as well.
+
+I converted main and exp boards to KiCad 4.0.2.
